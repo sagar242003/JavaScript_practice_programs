@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function createtext() {
+            let ob = document.createElement('input')
+            let ob2 = document.createElement('br')
+
+            ob.setAttribute("type", "text")
+            ob.setAttribute("value", "xyz")
+            ob.setAttribute("id", "t1")
+            //add to body
+
+            document.body.append(ob2)
+            document.body.append(ob)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="textbox" onclick="createtext()">
+</body>
+
+</html>

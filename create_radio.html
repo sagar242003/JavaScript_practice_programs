@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate radio button</title>
+
+    <script>
+        function radio_button() {
+            let ob = document.createElement('input')
+            ob.setAttribute('type', 'radio')
+            ob.setAttribute('value', 'Male')
+
+            let ob1 = document.createElement('label')
+            ob1.innerText = "Male"
+
+            document.body.append(ob1)
+            document.body.append(ob)
+
+            // document.body.prepend(ob1)
+            // document.body.prepend(ob)
+
+            // document.body.after(ob1)
+            // document.body.after(ob)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" id="b1" value="Generate" onclick="radio_button()">
+</body>
+
+</html>

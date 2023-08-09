@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        function showOK() {
+            alert("OK clicked")
+        }
+        function showCancel() {
+            alert("Cancel Clicked")
+        }
+        function ask(msg, ok, cancel) {
+            let f = confirm(msg)
+            if (f == true) {
+                ok()
+            } else {
+                cancel()
+            }
+        }
+        ask("do you want continue", showOK, showCancel)
+    </script>
+</head>
+
+</html>

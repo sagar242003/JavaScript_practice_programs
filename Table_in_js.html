@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function create() {
+            //obtain textbox from HTML
+            let ob1 = document.getElementById('t1')
+            let ob2 = document.getElementById('t2')
+            let ob3 = document.getElementById('t3')
+
+            let a = ob1.value
+            let b = ob2.value
+            let c = ob3.value
+
+            //obtain table reference
+            let mytable = document.getElementById("table1")
+            //create row
+            let row = document.createElement('tr')
+            let c1 = document.createElement('td')
+            let c2 = document.createElement('td')
+            let c3 = document.createElement('td')
+
+            c1.innerText = a
+            c2.innerText = b
+            c3.innerText = c
+
+            //add column to row
+
+            row.append(c1)
+            row.append(c2)
+            row.append(c3)
+
+            //add row to table
+
+            mytable.append(row)
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <label>ID</label>
+    <input type="text" id="t1" value=" "><br>
+    
+
+    <label>NAME</label>
+    <input type="text" id="t2" value=" "><br>
+
+    <label>ADDRESS</label>
+    <input type="text" id="t3" value=" "><br>
+
+    <br>
+    <br>
+
+    <input type="button" value="Click Here" onclick="create()">
+
+    <br>
+    <br>
+
+
+    <table border="1" id="table1">
+
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </thead>
+
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <thead>
+        <th>ID</th>
+        <th>NAME</th>
+    </thead>
+
+    <tr>
+        <td>100</td>
+        <td>abc</td>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>xyz</td>
+    </tr> -->

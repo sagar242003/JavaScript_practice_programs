@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function createtag() {
+            let d1 = document.createElement('div')
+            d1.id = "MyDiv"
+            d1.innerText = "This is div tag generated in runtime"
+            document.body.append(d1)
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="Click here" onclick="createtag()">
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="d1">
+            <input type="button" id="b1" value="click here"><br>
+        </div>
+        <div id="d2">
+            <input type="text" id="t1"><br>
+        </div>
+        <script>
+            console.log(document.body.childNodes.length)
+            let ob=document.getElementById('d1')
+            let size1=ob.childNodes.length;
+            console.log(size1)
+            for (let i = 0; i < size1; i++) {
+                console.log(ob.childNodes[i])
+                
+            }
+            /*let ob2=document.getElementById('d2')
+            let size2=ob.childNodes.length;
+            for (let i = 0; i < size2; i++) {
+                console.log(ob.childNodes[i])
+                
+            }*/
+
+            console.log(ob.firstChild)
+            console.log(ob.lastChild)
+            console.log(ob.nextSibling)
+            console.log(ob.previousSibling)
+            console.log(ob.nextElementSibling)
+            console.log(ob.previousElementSibling)
+
+        </script>
+    </body>
+
+</html>

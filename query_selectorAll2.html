@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .c1 {
+            background-color: greenyellow;
+        }
+
+        .c2 {
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function print() {
+            let arr = document.querySelectorAll('.c1')
+            for (let i = 0; i < arr.length; i++) {
+                let ob = arr[i];
+                ob.style.background = "red"
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <p class="c1">
+        this is p1
+    </p>
+    <br>
+    <p class="c2">
+        this is p2
+    </p>
+    <br>
+    <p class="c1">
+        this is p3
+    </p>
+    <br>
+    <input type="button" value="Click here" onclick="print()">
+</body>
+
+</html>
